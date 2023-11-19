@@ -1,21 +1,19 @@
 <?php
 
-namespace App\View\Components\Front;
+namespace App\View\Components\Crm;
 
-use App\Models\Company;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Navbar extends Component
+class Topbar extends Component
 {
     /**
      * Create a new component instance.
      */
-    public $company;
     public function __construct()
     {
-        $this->company = Company::first();
+        //
     }
 
     /**
@@ -23,6 +21,6 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.front.navbar');
+        return view('components.crm.topbar');
     }
 }

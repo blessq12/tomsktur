@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class BankRequisite extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'checkAccount',
+        'corrkAccount',
+        'bik',
+        'ogrn',
+        'okpo',
+        'okato'
+    ];
 }

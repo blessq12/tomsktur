@@ -1,11 +1,11 @@
 <?php
 
-namespace App\View\Components\Front;
+namespace App\View\Components\Crm;
 
-use App\Models\Company;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use App\Models\Company;
 
 class Navbar extends Component
 {
@@ -23,6 +23,6 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.front.navbar');
+        return view('components.crm.navbar');
     }
 }

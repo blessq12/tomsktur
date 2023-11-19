@@ -1,0 +1,22 @@
+.sidebar
+    min-height: calc( 100vh - 70px )
+    background: $color-main
+    position: relative
+    z-index: 0
+    color: $color-gray-light
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: -100px
+        background: $color-main
+        min-height: calc( 100vh - 70px )
+        width: 100%
+        z-index: -1
+    a
+        text-decoration: none
+        font-family: unbounded
+        font-weight: 200
+
+
+        
