@@ -6,7 +6,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4">
-                    
+                    {{-- header --}}
+                    <div class="d-flex justify-content-start align-items-center">
+                        <h4>Авторизация</h4>
+                        <a href="{{ route('main.index') }}" class="text-primary mx-2" style="font-size: 12px">На главную</a>
+                    </div>
                     {{-- info section --}}
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -25,6 +29,11 @@
                     @if (session('user'))
                         <div class="alert alert-warning">
                             <p class="mb-0">{{ session('user') }}</p>
+                        </div>
+                    @endif
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            <p class="mb-0">{{ session('success') }}</p>
                         </div>
                     @endif
                     {{-- end info section --}}

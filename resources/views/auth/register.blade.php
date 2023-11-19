@@ -12,22 +12,22 @@
                         <a href="{{ route('main.index') }}" class="text-primary mx-2" style="font-size: 12px">На главную</a>
                     </div>
                     {{-- info section --}}
-                    <div class="alert alert-success">
-                        <p class="mb-0">Успешная регистрация</p>
-                    </div>
-                    <div class="alert alert-danger">
-                        <p class="mb-0">Ошибки валидации</p>
-                    </div>
-                    <div class="alert alert-warning">
-                        <p class="mb-0">Предупреждения</p>
-                    </div>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="list-unstyled p-0 m-0">
+                                @foreach ($errors->all() as $error)
+                                    <li> {{ $error }} </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     {{-- end info section --}}
                     <form action="{{ route('auth.user-register') }}" method="post" class="border border-primary rounded p-3">
                         @csrf
                         <div class="form-group mb-2">
                             <label for="email">Email адрес: </label>
                             <div class="input-group">
-                                <input type="email" name="email" id="email" class="form-control" autocomplete="email" required>
+                                <input type="email" name="email" id="email" class="form-control" autocomplete="email" required value="{{ old('email') }}">
                                 <span class="input-group-text">
                                     @
                                 </span>
@@ -36,7 +36,7 @@
                         <div class="form-group mb-2">
                             <label for="name">Ваше имя: </label>
                             <div class="input-group">
-                                <input type="text" name="name" id="name" class="form-control" required autocomplete="name">
+                                <input type="text" name="name" id="name" class="form-control" required autocomplete="name" value="{{ old('name') }}">
                                 <span class="input-group-text">
                                     <i class="fa fa-user"></i>
                                 </span>

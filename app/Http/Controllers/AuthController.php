@@ -44,7 +44,38 @@ class AuthController extends Controller
         return redirect()->route('main.index');
     }
     public function userRegister(Request $request){
-        dd($request->all());
+        $validator = Validator::make($request->all(),[
+            'email' => 'email|unique:users|max:255|required',
+            'name' => 'min:3|max:255|required',
+            'tel' => 'min:18|max:18|required|unique:users',
+            'password' => 'min:6|required',
+        ],[
+            'email.email' => 'Невалидный адрес Email',
+            'email.unique' => 'Этот Email уже зарегистрирован',
+            'email.max' => 'Email максимум 255 символов',
+            'email.required' => 'Email Обазятелен к заполнению',
+            'name.min' => 'Имя не меньше 3 символов',
+            'name.max' => 'Имя не больше 255 символов',
+            'name.required' => 'Имя обязательно к заполнению',
+            'tel.min' => 'Некорректный номер телефона',
+            'tel.max' => 'Некорректный номер телефона',
+            'tel.unique' => 'Этот номер телефона уже зарегистрирован',
+            'tel.required' => 'Телефон обязателен',
+            'password.min' => 'Пароль минимум 6 символов',
+            'password.required' => 'Пароль обязателен к заполнению',
+        ]);
+
+        if ($validator->fails()){
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $user = new User($validator->validated());
+
+        if (!$user->save()){
+            return redirect()->back()->with('user', 'При создании аккаунта произошла ошибка, попробуйте снова');
+        }
+
+        return redirect()->route('auth.login')->with('success', 'Аккаунт будет активен после модерации');
     }
     public function userLogout(Request $request){
         Auth::logout();
