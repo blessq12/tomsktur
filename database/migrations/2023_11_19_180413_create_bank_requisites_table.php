@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Company;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,18 +12,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('companies', function (Blueprint $table) {
+        Schema::create('bank_requisites', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(Company::class);
             $table->string('name');
-            $table->string('nameShort');
-            $table->string('basis');
-            $table->string('addressUR');
-            $table->string('addressFC');
-            $table->string('tel');
-            $table->string('owner');
-            $table->string('inn');
-            $table->string('kpp');
+            $table->string('checkAccount');
+            $table->string('corrAccount');
+            $table->string('bik');
             $table->string('ogrn');
+            $table->string('okpo');
+            $table->string('okato');
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('companies');
+        Schema::dropIfExists('bank_requisites');
     }
 };

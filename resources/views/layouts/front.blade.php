@@ -13,7 +13,9 @@
 </head>
 <body>
     <div id="app">
+        <x-front.navbar></x-front.navbar>
         @yield('content')
+        <x-front.footer></x-front.footer>
     </div>
 </body>
 </html>
