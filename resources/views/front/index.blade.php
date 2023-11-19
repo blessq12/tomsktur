@@ -5,6 +5,11 @@
 <div class="container py-4">
     <div class="row">
         <div class="col-12">
+            @auth
+            <div class="alert alert-success">
+                <p class="mb-0">{{ Auth::user()->name }}</p>
+            </div>
+            @endauth
             <h2>Главная страница</h2>
         </div>
     </div>
