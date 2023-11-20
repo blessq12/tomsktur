@@ -1,7 +1,16 @@
 <div class="sidebar py-4">
     <h5 class="mb-2">Навигация</h5>
     <ul class="list-unstyled p-0 m-0">
-        
+        <li class="border-bottom py-2">
+            <a href="{{ route('crm.index') }}" class="text-light">
+                Дашборд
+            </a>
+        </li>
+        <li class="border-bottom py-2">
+            <a href="{{ route('crm.banners.index') }}" class="text-light">
+                Баннеры
+            </a>
+        </li>
         <li class="border-bottom py-2">
             <a href="{{ route('crm.companies.index') }}" class="text-light">
                 Компания

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\CrmController;
 use App\Http\Controllers\MainController;
@@ -29,6 +30,7 @@ Route::controller(CrmController::class)->prefix('crm')->name('crm.')->group(func
         Route::patch('/companies/{id}/requisites',[CompanyController::class, 'requisites'])->name('companies.requisites.update');
         Route::resource('companies', CompanyController::class);
         Route::resource('users', UserController::class);
+        Route::resource('banners', BannerController::class);
     });
 });
 

@@ -1,5 +1,5 @@
 @extends('layouts.minimal')
-@section('title')
+@section('title', 'Авторизация')
 
 @section('content')
     <div class="wrapper d-flex align-items-center" style="height:100vh;">

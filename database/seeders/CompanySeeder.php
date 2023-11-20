@@ -17,6 +17,7 @@ class CompanySeeder extends Seeder
             [
                 'name' => 'Общество с ограниченной ответственностью «Томсктур»',
                 'nameShort' => 'ООО «Томсктур»',
+                'logo' => '/images/logo.png',
                 'basis' => 'Устав',
                 'addressUR' => '634021, г. Томск, ул. Сибирская, 104-310',
                 'addressFC' => '634021, г. Томск, ул. Шевченко, 26',

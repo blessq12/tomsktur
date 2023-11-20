@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('nameShort');
+            $table->string('logo');
             $table->string('basis');
             $table->string('addressUR');
             $table->string('addressFC');
