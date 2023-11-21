@@ -1,0 +1,111 @@
+{
+  "resources/fonts/Unbounded-Black.woff": {
+    "file": "assets/Unbounded-Black-7dbaa835.woff",
+    "src": "resources/fonts/Unbounded-Black.woff"
+  },
+  "resources/fonts/Unbounded-Black.woff2": {
+    "file": "assets/Unbounded-Black-8e0b528c.woff2",
+    "src": "resources/fonts/Unbounded-Black.woff2"
+  },
+  "resources/fonts/Unbounded-Bold.woff": {
+    "file": "assets/Unbounded-Bold-0a1b15c1.woff",
+    "src": "resources/fonts/Unbounded-Bold.woff"
+  },
+  "resources/fonts/Unbounded-Bold.woff2": {
+    "file": "assets/Unbounded-Bold-9110df31.woff2",
+    "src": "resources/fonts/Unbounded-Bold.woff2"
+  },
+  "resources/fonts/Unbounded-ExtraBold.woff": {
+    "file": "assets/Unbounded-ExtraBold-7fdb04be.woff",
+    "src": "resources/fonts/Unbounded-ExtraBold.woff"
+  },
+  "resources/fonts/Unbounded-ExtraBold.woff2": {
+    "file": "assets/Unbounded-ExtraBold-d5cd3b4c.woff2",
+    "src": "resources/fonts/Unbounded-ExtraBold.woff2"
+  },
+  "resources/fonts/Unbounded-ExtraLight.woff": {
+    "file": "assets/Unbounded-ExtraLight-796b3479.woff",
+    "src": "resources/fonts/Unbounded-ExtraLight.woff"
+  },
+  "resources/fonts/Unbounded-ExtraLight.woff2": {
+    "file": "assets/Unbounded-ExtraLight-4cab983b.woff2",
+    "src": "resources/fonts/Unbounded-ExtraLight.woff2"
+  },
+  "resources/fonts/Unbounded-Light.woff": {
+    "file": "assets/Unbounded-Light-6ff623d1.woff",
+    "src": "resources/fonts/Unbounded-Light.woff"
+  },
+  "resources/fonts/Unbounded-Light.woff2": {
+    "file": "assets/Unbounded-Light-b801e278.woff2",
+    "src": "resources/fonts/Unbounded-Light.woff2"
+  },
+  "resources/fonts/Unbounded-Medium.woff": {
+    "file": "assets/Unbounded-Medium-92d06d9a.woff",
+    "src": "resources/fonts/Unbounded-Medium.woff"
+  },
+  "resources/fonts/Unbounded-Medium.woff2": {
+    "file": "assets/Unbounded-Medium-df410b3e.woff2",
+    "src": "resources/fonts/Unbounded-Medium.woff2"
+  },
+  "resources/fonts/Unbounded-Regular.woff": {
+    "file": "assets/Unbounded-Regular-dd349b43.woff",
+    "src": "resources/fonts/Unbounded-Regular.woff"
+  },
+  "resources/fonts/Unbounded-Regular.woff2": {
+    "file": "assets/Unbounded-Regular-7abc4a94.woff2",
+    "src": "resources/fonts/Unbounded-Regular.woff2"
+  },
+  "resources/fonts/Unbounded-SemiBold.woff": {
+    "file": "assets/Unbounded-SemiBold-1f2a6ae5.woff",
+    "src": "resources/fonts/Unbounded-SemiBold.woff"
+  },
+  "resources/fonts/Unbounded-SemiBold.woff2": {
+    "file": "assets/Unbounded-SemiBold-cfade87d.woff2",
+    "src": "resources/fonts/Unbounded-SemiBold.woff2"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-d1def017.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/Unbounded-ExtraLight-796b3479.woff",
+      "assets/Unbounded-ExtraLight-4cab983b.woff2",
+      "assets/Unbounded-Light-6ff623d1.woff",
+      "assets/Unbounded-Light-b801e278.woff2",
+      "assets/Unbounded-Regular-dd349b43.woff",
+      "assets/Unbounded-Regular-7abc4a94.woff2",
+      "assets/Unbounded-Medium-92d06d9a.woff",
+      "assets/Unbounded-Medium-df410b3e.woff2",
+      "assets/Unbounded-SemiBold-1f2a6ae5.woff",
+      "assets/Unbounded-SemiBold-cfade87d.woff2",
+      "assets/Unbounded-Bold-0a1b15c1.woff",
+      "assets/Unbounded-Bold-9110df31.woff2",
+      "assets/Unbounded-ExtraBold-7fdb04be.woff",
+      "assets/Unbounded-ExtraBold-d5cd3b4c.woff2",
+      "assets/Unbounded-Black-7dbaa835.woff",
+      "assets/Unbounded-Black-8e0b528c.woff2"
+    ],
+    "css": [
+      "assets/app-d1def017.css"
+    ],
+    "file": "assets/app-c4b12f96.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/crm/app.sass": {
+    "file": "assets/app-ba67ac38.css",
+    "isEntry": true,
+    "src": "resources/sass/crm/app.sass"
+  },
+  "resources/sass/errors.sass": {
+    "file": "assets/errors-582bdbab.css",
+    "isEntry": true,
+    "src": "resources/sass/errors.sass"
+  },
+  "resources/sass/front/app.sass": {
+    "file": "assets/app-d27946ca.css",
+    "isEntry": true,
+    "src": "resources/sass/front/app.sass"
+  }
+}
