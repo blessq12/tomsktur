@@ -1,3 +1,35 @@
 nav
-    background: $color-gray-light
-    padding: 24px 0
+    background: $color-gray-regular
+    padding: 15px 0
+    a
+        text-decoration: none !important
+        color: $color-secondary
+    .nav-logo
+        display: flex
+        align-items: center
+        img
+            max-height: 40px
+            margin-right: 8px
+        h1
+            margin-bottom: 0
+            font-size: 1.2rem
+        p
+            margin-bottom: 0
+            font-size: .7rem
+    .nav-list
+        display: flex
+        align-items: center
+        list-style: none
+        padding: 0
+        margin: 0
+        li
+            border-bottom: 2px solid transparent
+            transition: all .3s
+            margin: 0 8px
+            cursor: pointer
+            font-family: unbounded
+            font-weight: 200
+            font-size: 1rem
+            white-space: nowrap
+            &:hover
+                border-bottom: 2px solid $color-secondary
