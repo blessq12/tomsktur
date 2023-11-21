@@ -15,6 +15,7 @@ export default defineConfig({
             input: [
                 'resources/sass/front/app.sass',
                 'resources/sass/crm/app.sass',
+                'resources/sass/errors.sass',
                 'resources/js/app.js',
             ],
             refresh: true,

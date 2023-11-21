@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Заголовок не назначен')</title>
     @include('layouts.cdns')
-    {{-- @vite('resources/js/app.js') --}}
 </head>
 <body>
     <div id="app">
