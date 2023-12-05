@@ -14,11 +14,15 @@
     <div class="wrap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8 col-lg-6">
+                <div class="col-12 col-md-10 col-lg-8">
                     <div class="error">
-                        <div class="code">@yield('code')</div>
+                        <div class="code d-none d-md-flex">@yield('code')</div>
                         <div class="text">@yield('text')</div>
                     </div>
+                </div>
+                <div class="col-12 d-flex justify-content-start justify-content-md-center mt-3">
+                    <a href="tel:{{ $company->tel }}" class="btn btn-outline-primary d-none d-md-block w-50"> {{ $company->tel }} </a>
+                    <a href="tel:{{ $company->tel }}" class="btn btn-outline-primary d-block d-md-none w-100"> {{ $company->tel }} </a>
                 </div>
             </div>
         </div>
